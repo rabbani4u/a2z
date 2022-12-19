@@ -1,5 +1,6 @@
 import React from "react";
 import "./Course.css";
+import { Button } from "react-bootstrap";
 
 const Course = props => {
   const { image, name, instructor, price } = props.course;
@@ -9,12 +10,15 @@ const Course = props => {
         <img src={image} alt="" />
       </div>
       <div>
-        <h3>{name}</h3>
+        <h4>{name}</h4>
         <p>{instructor}</p>
         <p>Price: {price}</p>
-        <button onClick={() => props.handleButton(props.course)}>
+        <Button
+          variant="warning"
+          onClick={() => props.handleButton(props.course)}
+        >
           Buy Now
-        </button>
+        </Button>
       </div>
     </div>
   );

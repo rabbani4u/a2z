@@ -3,6 +3,7 @@ import Course from "../Course/Course";
 import courseData from "../../FakeData/courseData";
 import Cart from "../Cart/Cart";
 import "./Shop.css";
+import Header from "../Header/Header";
 
 const Shop = () => {
   const [courses, setCourses] = useState(courseData);
