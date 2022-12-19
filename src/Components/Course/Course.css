@@ -18,3 +18,8 @@
   border-radius: 2px;
   border: none;
 }
+.heading {
+  color: #0a0af6;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}

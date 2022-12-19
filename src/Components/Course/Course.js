@@ -11,7 +11,7 @@ const Course = props => {
         <img src={image} alt="" />
       </div>
       <div className="course-info">
-        <h4>{name}</h4>
+        <h4 className="heading">{name}</h4>
         <p>{instructor}</p>
         <p>Price: {price}</p>
         <button
