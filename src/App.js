@@ -3,6 +3,7 @@ import Shop from "./Components/Shop/Shop";
 import courseData from "./FakeData/courseData";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Components/Header/Header";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -11,6 +12,9 @@ function App() {
         <Header />
       </div>
       <Shop />
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }
