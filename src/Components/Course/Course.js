@@ -1,6 +1,7 @@
 import React from "react";
 import "./Course.css";
 import { Button } from "react-bootstrap";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 const Course = props => {
   const { image, name, instructor, price } = props.course;
@@ -9,16 +10,17 @@ const Course = props => {
       <div>
         <img src={image} alt="" />
       </div>
-      <div>
+      <div className="course-info">
         <h4>{name}</h4>
         <p>{instructor}</p>
         <p>Price: {price}</p>
-        <Button
+        <button
+          className="add-to-card-btn"
           variant="warning"
           onClick={() => props.handleButton(props.course)}
         >
-          Buy Now
-        </Button>
+          <ShoppingCartIcon /> add to card
+        </button>
       </div>
     </div>
   );

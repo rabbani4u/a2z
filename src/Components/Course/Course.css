@@ -1,8 +1,20 @@
 .course {
   display: flex;
   border-bottom: 1px solid lightgray;
+  margin-top: 10px;
+  position: relative;
+}
+.course-info {
+  margin-bottom: 10px;
 }
 .course img {
   width: 150px;
   margin: 10px;
+}
+.add-to-card-btn {
+  width: 160px;
+  height: 30px;
+  background-color: #f0c14b;
+  border-radius: 2px;
+  border: none;
 }
