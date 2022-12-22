@@ -13,7 +13,9 @@ const Course = props => {
       <div className="course-info">
         <h4 className="heading">{name}</h4>
         <p>{instructor}</p>
-        <p>Price: {price}</p>
+        <p>
+          Price: $<strong>{price}</strong>
+        </p>
         <button
           className="add-to-card-btn"
           variant="warning"

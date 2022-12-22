@@ -2,7 +2,7 @@ const courseData = [
   {
     id: 1,
     image:
-      "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=588&q=80",
+      "https://images.unsplash.com/photo-1511108690759-009324a90311?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60",
     name: "Tile Pro (2022) 1-Pack. Powerful Bluetooth Tracker, Keys Finder and Item Locator for Keys, Bags, and More; Up to 400 ft Range. Water-Resistant. Phone Finder.",
     instructor: "⭐⭐⭐⭐⭐ (4255)",
     price: 1000,
@@ -10,7 +10,7 @@ const courseData = [
   {
     id: 2,
     image:
-      "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "https://images.unsplash.com/photo-1545239351-cefa43af60f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60",
 
     name: "Miroir M125 LED Portable Projector  70 Image 854 x 480p Resolution  HDMI DLP (RENEWED) 2 - Year Warranty",
     instructor: "⭐⭐⭐⭐ (125)",
@@ -19,7 +19,7 @@ const courseData = [
   {
     id: 3,
     image:
-      "https://cdn.pixabay.com/photo/2016/03/27/17/59/motorcycle-1283299_960_720.jpg",
+      "https://images.unsplash.com/photo-1535398089889-dd807df1dfaa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=400&q=60",
 
     name: "OXO Good Grips Sweep & Swipe Laptop Cleaner, White, One Size",
     instructor: "⭐⭐⭐⭐ (9255)",
@@ -28,7 +28,7 @@ const courseData = [
   {
     id: 4,
     image:
-      "https://cdn.pixabay.com/photo/2015/12/07/14/18/drone-1080844_960_720.jpg",
+      "https://images.unsplash.com/photo-1538035323718-63409b754ce7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
 
     name: "JBL Clip 4: Portable Speaker with Bluetooth, Built-in Battery, Waterproof and Dustproof Feature - Black (JBLCLIP4BLKAM)",
     instructor: "⭐⭐⭐⭐⭐ (955)",
@@ -37,11 +37,20 @@ const courseData = [
   {
     id: 5,
     image:
-      "https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9va3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60",
 
-    name: "JBL Tune 125TWS True Wireless In-Ear Headphones - JBL Pure Bass Sound, 32H Battery, Bluetooth, Fast Pair, Comfortable, Wireless Calls, Music, Native Voice Assistant (Black), Small",
-    instructor: "⭐⭐⭐⭐ (7155)",
-    price: 1800,
+    name: "Nightmare Abbey by Thomas Love Peacock",
+    instructor: "⭐⭐⭐⭐ (655)",
+    price: 800,
+  },
+  {
+    id: 6,
+    image:
+      "https://images.unsplash.com/photo-1513001900722-370f803f498d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+
+    name: "The Life and Opinions of Tristram Shandy, Gentleman by Laurence Sterne",
+    instructor: "⭐⭐⭐ (125)",
+    price: 300,
   },
 ];
 

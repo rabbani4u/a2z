@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import "./Cart.css";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 
 const Cart = props => {
   const cart = props.cart;
@@ -11,12 +11,12 @@ const Cart = props => {
     <div className="cart-container">
       <h4 className="order-details">Order Sumarry</h4>
       <h5 className="cart-item">
-        <ShoppingCartIcon />
+        <ShoppingBasketIcon />
         {cart.length}
       </h5>
-      <p>Products Price: {courseTotal}</p>
-      <p>Tax: {tax}</p>
-      <h6 className="grand-total">Total Price: {courseTotal + tax}</h6>
+      <p>Products Price: ${courseTotal}</p>
+      <p>Tax: ${tax}</p>
+      <h6 className="grand-total">Total Price: ${courseTotal + tax}</h6>
       <button className="add-to-card-btn">Place Order</button>
     </div>
   );

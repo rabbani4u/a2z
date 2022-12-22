@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 import Shop from "./Components/Shop/Shop";
 import courseData from "./FakeData/courseData";
 import "bootstrap/dist/css/bootstrap.min.css";
