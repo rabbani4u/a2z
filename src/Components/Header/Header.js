@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./Header.css";
 import Logo from "../../images/logo.png";
+import "./Header.css";
 
 const Header = () => {
   console.log(Logo);

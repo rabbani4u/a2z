@@ -1,10 +1,11 @@
 import React from "react";
 import "./Course.css";
-import { Button } from "react-bootstrap";
+
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { Link } from "react-router-dom";
 
 const Course = props => {
+  console.log(props);
   const { image, name, instructor, price, key } = props.course;
   return (
     <div className="course">
@@ -19,13 +20,15 @@ const Course = props => {
         <p>
           Price: $<strong>{price}</strong>
         </p>
-        <button
-          className="add-to-card-btn"
-          variant="warning"
-          onClick={() => props.handleButton(props.course)}
-        >
-          <ShoppingCartIcon /> add to card
-        </button>
+        {props.showAddtoCart && (
+          <button
+            className="add-to-card-btn"
+            variant="warning"
+            onClick={() => props.handleButton(props.course)}
+          >
+            <ShoppingCartIcon /> add to card
+          </button>
+        )}
       </div>
     </div>
   );

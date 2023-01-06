@@ -3,7 +3,6 @@ import Course from "../Course/Course";
 import courseData from "../../FakeData/courseData";
 import Cart from "../Cart/Cart";
 import "./Shop.css";
-import Header from "../Header/Header";
 
 const Shop = () => {
   const [courses, setCourses] = useState(courseData);
@@ -18,7 +17,11 @@ const Shop = () => {
     <div className="shop-container">
       <div className="course-container">
         {courses.map(course => (
-          <Course course={course} handleButton={handleButton} />
+          <Course
+            showAddtoCart={true}
+            course={course}
+            handleButton={handleButton}
+          />
         ))}
       </div>
       <div className="card-container">

@@ -21,7 +21,7 @@ function App() {
           <Route path="/review" element={<Review />} />
           <Route path="/inventory" element={<Inventory />} />
           <Route path="/" element={<Shop />} />
-          <Route path={"/product/:coursekey"} element={<ProductDetails />} />
+          <Route path={"/course/:coursekey"} element={<ProductDetails />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
