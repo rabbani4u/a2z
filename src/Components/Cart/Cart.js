@@ -1,7 +1,8 @@
 import React from "react";
-import { Button } from "react-bootstrap";
+
 import "./Cart.css";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
+import { Link } from "react-router-dom";
 
 const Cart = props => {
   const cart = props.cart;
@@ -17,7 +18,9 @@ const Cart = props => {
       <p>Products Price: ${courseTotal}</p>
       <p>Tax: ${tax}</p>
       <h6 className="grand-total">Total Price: ${courseTotal + tax}</h6>
-      <button className="add-to-card-btn">Place Order</button>
+      <Link to="/review">
+        <button className="add-to-card-btn">Review Order</button>
+      </Link>
     </div>
   );
 };
