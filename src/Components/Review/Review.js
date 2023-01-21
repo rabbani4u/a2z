@@ -19,9 +19,8 @@ function Review() {
   }, []);
   return (
     <div>
-      Cart Item: {cart.length}
       {cart.map(pd => (
-        <ReviewItem course={pd}></ReviewItem>
+        <ReviewItem key={pd.key} course={pd}></ReviewItem>
       ))}
     </div>
   );
