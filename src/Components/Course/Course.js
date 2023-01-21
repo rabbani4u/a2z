@@ -5,7 +5,6 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { Link } from "react-router-dom";
 
 const Course = props => {
-  console.log(props);
   const { image, name, instructor, price, key } = props.course;
   return (
     <div className="course">
