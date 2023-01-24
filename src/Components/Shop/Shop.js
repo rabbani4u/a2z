@@ -10,15 +10,27 @@ const Shop = () => {
   const [cart, setCart] = useState([]);
 
   function handleButton(course) {
-    const newcart = [...cart, course];
+    const toBeAdded = course.key;
+    const sameCourse = cart.find(pd => pd.key === toBeAdded);
+    let count = 1;
+    let newcart;
+    if (sameCourse) {
+      const count = sameCourse.quantity + 1;
+      sameCourse.quantity = count;
+      const others = cart.filter(pd => pd.key !== toBeAdded);
+      newcart = [...others, sameCourse];
+    } else {
+      course.quantity = 1;
+      newcart = [...cart, course];
+    }
+
     setCart(newcart);
-    const sameProduct = newcart.filter(pd => pd.key === course.key);
-    const count = sameProduct.length;
+
     addToDatabaseCart(course.key, count);
   }
 
   return (
-    <div className="shop-container">
+    <div className="twin-container">
       <div className="course-container">
         {courses.map(course => (
           <Course

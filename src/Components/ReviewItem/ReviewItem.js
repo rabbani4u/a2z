@@ -3,7 +3,7 @@ import "./RewiewItem.css";
 
 function ReviewItem(props) {
   console.log(props);
-  const { name, image, quantity, rating } = props.course;
+  const { name, image, quantity, price, rating, key } = props.course;
   return (
     <div className="review-items">
       <div className="review_item_img">
@@ -14,8 +14,14 @@ function ReviewItem(props) {
         <h3 className="heading">{name}</h3>
         <p>{rating}</p>
         <p>Quantity{quantity}</p>
+        <p>Price:${price}</p>
         <br />
-        <button className="add-to-card-btn">Remove</button>
+        <button
+          onClick={() => props.removeProduct(key)}
+          className="add-to-card-btn"
+        >
+          Remove
+        </button>
       </div>
     </div>
   );
