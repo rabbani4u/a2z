@@ -13,7 +13,7 @@ function ReviewItem(props) {
       <div>
         <h3 className="heading">{name}</h3>
         <p>{rating}</p>
-        <p>Quantity{quantity}</p>
+        <p>Quantity:{quantity}</p>
         <p>Price:${price}</p>
         <br />
         <button

@@ -1,13 +1,28 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Course from "../Course/Course";
 import courseData from "../../FakeData/courseData";
 import Cart from "../Cart/Cart";
 import "./Shop.css";
-import { addToDatabaseCart } from "../../utilities/databaseManager";
+import {
+  addToDatabaseCart,
+  getDatabaseCart,
+} from "../../utilities/databaseManager";
 
 const Shop = () => {
   const [courses, setCourses] = useState(courseData);
   const [cart, setCart] = useState([]);
+
+  useEffect(() => {
+    const saveCart = getDatabaseCart();
+    const courseKey = Object.keys(saveCart);
+    const previousCart = courseKey.map(existingKey => {
+      const course = courseData.find(pd => pd.key === existingKey);
+      course.quantity = saveCart[existingKey];
+      return course;
+    });
+
+    setCart(previousCart);
+  }, []);
 
   function handleButton(course) {
     const toBeAdded = course.key;
